@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout 2</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 40px 200px 40px;
+        grid-gap: 20px;
+        grid-template-areas:
+          " h h h h h h h h h h h h "
+          " m m m m c c c c c c c c "
+          " f f f f f f f f f f f f ";
+      }
+      .header {
+        background-color: rgb(55, 55, 251);
+        grid-area: h;
+      }
+      .footer {
+        background-color: rgb(66, 191, 114);
+        grid-area: f;
+      }
+      .menu {
+        background-color: rgb(176, 236, 74);
+        grid-area: m;
+      }
+      .content {
+        background-color: rgb(249, 126, 17);
+        grid-area: c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">header</div>
+      <div class="menu">menu</div>
+      <div class="content">content</div>
+      <div class="footer">footer</div>
+      <div></div>
+    </div>
+  </body>
+</html>

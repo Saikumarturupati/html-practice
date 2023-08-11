@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <title>babblu</title>
+        <style>
+#container {
+    border:1px red;
+    /* display:auto; */
+    width:100%;
+    height:600px;
+    display: flex;
+    
+    }
+    #container > div > p {
+    font-size:20px;
+    }
+    #container > div {
+    width:30%;
+    height:80%;
+    margin:2%;
+    margin-top:40px;
+}
+    #container > div > img {
+    width:450px;
+    height: 250px;
+    
+}
+.container{
+    border: 6px solid black;
+    display:flex;
+    flex-wrap: nowrap;
+    /* height: 500px; */
+    /* width:500px; */
+    /* flex-flow: */
+    /* justify-content:space-between  ; */
+    /* align-content:flex-start;  */
+    /* height:500px; */
+    /* flex-end,center,space-between space-around,space-evenly */
+}
+.flex-item{
+color: aqua;
+font-size: 10px;
+padding: 10px;
+text-align: center;
+/* 4=2+1+1 */
+}
+.item-1{
+    background-color:orange;
+    order: 0;
+    flex-grow: 2;
+}
+.item-2{
+    background-color:palevioletred;
+    order: 0;
+    flex-grow: 1
+}
+.item-3{
+    background-color: blue;
+    order: 0;
+    flex-grow: 1
+}
+.item-4{
+    background-color:green;
+    order: 0;
+}
+.item-5{
+    background-color:saddlebrown;
+    order: 0;
+}
+.item-6{
+    background-color:gold;
+    order: 0;
+}
+.item-7{
+    background-color:firebrick;
+    order: 0;
+    flex-grow: 0;
+}
+.item-8{
+    background-color:darkturquoise;
+    order: 0;
+    flex-grow: 0;
+}
+.item-9{
+    background-color:teal;
+    order: 0;
+    flex-grow: 0;
+}
+
+.box{
+    height: 100px;
+    width:90%;
+    background-color: rgb(245, 178, 32);
+    margin:auto;
+    border: 2px solid red ;
+    display:flex;
+}
+.left{
+   width:60%;
+   height: 100%;
+   font-size:25PX;
+   color: rgb(11, 7, 1);
+   padding:30PX;
+}
+.right{
+    width:30%;
+    height:100%;
+    color:white;
+    display:flex;
+    justify-content:space-around; 
+    padding: 30px;
+}
+select{
+    padding:2px;
+    background-color:transparent;
+    color:white;
+    border:0px;
+    font-size:15px;
+}
+</style>
+</head>
+<body>    
+ <div class="box">
+            <div class="left">MEGAWIDTH</div>
+            <div class="right">
+                <div>HOME</div>
+                <div>ABOUT</div>
+                <div>BLOG</div>
+                <div>
+                    <select>
+                        <option>Babblu</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br></br>
+    <div class="container">
+        <div class= "flex-item item-1">Item 1</div>
+        <div class="flex-item item-2">Item 2</div>
+        <div class="flex-item item-3">Item 3</div>
+        <div class="flex-item item-4">Item 4</div>
+        <div class="flex-item item-5">Item 5</div>
+        <div class="flex-item item-6">Item 6</div>
+        <div class="flex-item item-7">Item 7</div>
+        <div class="flex-item item-8">Item 8</div>
+        <div class="flex-item item-9">Item 9</div>
+        
+    </div>
+        
+    <!-- parent prop
+    display
+    flex-direction --row and colum
+    flex-flow
+    flex-wrap--wrap
+    justify-content-- horizental spacing
+    align-content
+    <align-item vertical spacing></align-item> -->
+    
+<!-- childern prop
+order
+flex-grow
+flex-shrink
+flex-basis -->
+        <div id ="container"><br></br>
+        <div>
+        <img src="data:image/jpeg;base64,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" alt=""/>
+        <p>Cute girl</p>
+        <h3 > Kajal A Kitchlu is an Indian actress who works predominantly in Telugu and Tamil language films. She has worked in more than 50 films and has received two South Indian International Movie Awards. Aggarwal made her acting debut with a small role in the 2004 education film Kyun!.</h2>
+        <a href="">Read more</a>
+        </div> 
+        <div>
+            <img src="https://4.bp.blogspot.com/-fmL-V0Qm9ro/WzoM0rZhatI/AAAAAAAAPws/z3b51q3VbqYm2pK5c1LFYn6NNueAqtZ7QCLcBGAs/s640/anupama-parameswaran-hd-images-12.jpg?imgmax=800" alt=""/>
+            <p>geogreous girl</p>
+            <h3>Anupama Parameswaran is an Indian actress who predominantly works in Telugu, Malayalam and Tamil films. She debuted with a supporting role in the Malayalam romance film Premam, which became an industry hit.</h3>
+            <a href="">Read more</a>
+        </div>
+<div>
+    <img src="https://images.hindustantimes.com/img/2022/02/24/1600x900/8511a084-8bf7-11ec-a3d5-79f1fff90b2c_1645682031687.jpg" alt="">
+    <p>Weast girl</p>
+    <h3>Regina Cassandra is an Indian actress who primarily works in Tamil and Telugu films. She made her acting debut in a supporting role with the Tamil film Kanda Naal Mudhal and made her Telugu film debut with Siva Manasulo Sruthi, for which she won the SIIMA Award for Best Female Debut – Telugu. Wikipedia</h3>
+    <a href="">Readmoe</a>
+</div>
+        <!-- <div>
+            <img src="https://placehold.co/450x250" alt=""/>
+
+        </div> -->
+    </div>
+    </body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Page Title</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file here if you have one -->
+    <script src="script.js"></script> <!-- Add your JavaScript file here if you have one -->
+<style>
+    /* Descendant selector */
+      /* selector1 selector2 */
+      /* div p --> all the descendants inside idv which are p  */ 
+     /* child selector */
+     /* selector1>selector2 */
+     /* div>p --> all the childs inside div which are p */
+     /* general sibling */
+     /* selector1~selector2 */
+     
+     div > P:nth-child(even){
+    background-color:teal;
+}
+div > P:nth-child(){
+    background-color:black
+}
+div > P:nth-child(1){
+    color:green;
+    font-size: 35px;
+}
+input:focus{
+    background-color:green
+}
+h1::before{
+    content:" babblu  "
+}
+ /* attribute selector */
+ /* [attribute="value"]  */
+    intput[type ="number"]{
+    background-color: red;  
+}
+a [ href="https://www.google.com"]{
+    color:red;
+}
+button{
+    padding: 20px 25px;
+}
+button:hover{
+    font-size:3em;
+    background-color:red;
+    color: black;
+    border: 2px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <h1>saikumar</h1>
+    <input type="text" placeholder="enter username"/>
+    <br></br>
+    <button>babblu</button>
+    <br></br><br></br>
+    <input type="text"/>
+    <input type="number"/>
+    <input type="date"/>
+    <input type="submit"/>
+    <a href="https://www.masaischool.com">masaischool</a>
+    <a href="https://www.google.com">google</a>
+    <br></br>
+    <div>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+    </div>
+    <div id="firstdiv">
+        <p id="firstdiv"> I am p1</p>
+        <p > I am p2</p>
+        <p> i am p4</p>
+        <p> i am p5</p>
+        <h1> I am another H1</h1>
+    </div>    
+    <div id="seconddiv"> 
+        <P> I AM p3</P>
+        <h1> I am H1</h1>
+    </div>
+       <br>
+    <div style="width:80px;background-color:red;height:20px;">BLOCK
+        <div style="width:80px;background-color:olive;height:20px;">INLINE
+            <div style="width:80px;background-color:blue;height:20px;">ORANGE
+            </div>
+        </div>
+    </div><br></br>
+    <hr>
+    <br>
+<h1 style="background-color: red;display:inline">saikumar</h1><br>
+<h1 style="background-color: red;color:white;font-weight:900;display:inline">babblu</h1>
+<p style="font-size:30px;text-align:center;">sai</p>
+<br>
+<lable>name</lable>
+<input typr="text"/><br><br/>
+<label>password</label>
+<input type="password"/>
+<input type="submit"/>
+</body>
+<br></Br>
+<hr>
+<div>
+    <div style="background-color: red;">DIV
+        <div style="background-color: green;">DIV
+            <div style="background-color: blue;text-align:center;font-size:2em;">DIV
+            </div>
+        </div>
+    </div>
+</div>
+<span style="background-color:orange;">div</span>
+<br>
+<hr>
+    <header>
+        <!-- Add your header content here -->
+    </header>  
+    <h1 style="background-color:rgb(250, 249, 249);font-size:2em;color:blue ;display:inline">saikumar</h1>
+<hr>
+<table border ="1px solid red">
+<thead>
+    <th>saikumar</th>
+    <th>english</th>
+    <th>telugu</th>
+    <th>maths</th>
+    <th>science</th>
+    <th>social</th>
+</thead>
+<tbody>
+    <th>saikumar</th>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td
+   </tbody>
+   <tbody>
+    <th>saikumar</th>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td
+   </tbody>
+   <tbody>
+    <th>saikumar</th>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td
+   </tbody>
+   <tbody>
+    <th>saikumar</th>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td
+   </tbody>
+   <tbody>
+    <th>saikumar</th>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td
+   </tbody>
+
+</table>
+<br>
+
+<table border="2em solid red ">
+<thead>
+    <th>saikumar</th>
+    <th>english</th>
+    <th>telugu</th>
+    <th>maths</th>
+    <th>science</th>
+    <th>social</th>
+</thead>
+<tbody>
+    <th>saikumar</th>
+    <td>100</td>
+    <td colspan="2">100</td>
+    <td>100</td>
+    <td>100</td>
+    
+   </tbody>
+   <tbody>
+    <th>saikumar</th>
+    <td>100</td>
+    <td>100</td>
+    <td colspan="5">100</td>
+    
+   </tbody>
+   <tbody>
+    <th>saikumar</th>
+    <td rowspan="5">100</td>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td
+   </tbody>
+   <tbody>
+    <th>saikumar</th>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td
+   </tbody>
+   <tbody>
+    <th>saikumar</th>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td
+   </tbody>
+</table>
+<br>
+<table>
+    <tr>
+        <td>name</td>
+        <td><input type="text"></td> 
+    </tr>
+</table>
+
+</html>
